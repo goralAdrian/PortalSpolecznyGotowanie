@@ -13,8 +13,10 @@ export default class Panel extends React.Component{
 		<panel>
 				<center>
 					<table width="100%">
-						<tr a style={{backgroundColor: bgColor.Silver}}><td><NavLink href="/profil">Profil</NavLink></td><td><NavLink href="/logowanie">Zaloguj się</NavLink></td><td><NavLink href="/wyloguj">Wyloguj się</NavLink></td><td><NavLink href="/rejestracja">Rejestracja</NavLink></td></tr>
+						<tr a style={{backgroundColor: bgColor.Silver}}><td><NavLink href="/profil">Profil</NavLink></td><td><NavLink href="/loguj">Zaloguj się</NavLink></td><td><NavLink href="/wyloguj">Wyloguj się</NavLink></td><td><NavLink href="/rejestracja">Rejestracja</NavLink></td></tr>
 					</table>
+					<br/>
+					<NavLink href="/panelAdmina">Panel admina</NavLink>
 				</center>
 		</panel>
 		);

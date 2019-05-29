@@ -5,9 +5,11 @@ export default class Profil extends React.Component{
 		return(
 		<profil>
 			<center>
-				<table width="50%">
-					<tr><td>Nazwa użytkownika:</td><td></td></tr>
+				<table border = "4" cellpadding = "10" width="50%">
+					<tr><td width="50%">Nazwa użytkownika:</td><td></td></tr>
 					<tr><td>Zalogowany:</td><td></td></tr>
+					<tr><td>Przepisów:</td><td></td></tr>
+					<tr><td>Komentarzy:</td><td></td></tr>
 				</table>
 			</center>
 		</profil>

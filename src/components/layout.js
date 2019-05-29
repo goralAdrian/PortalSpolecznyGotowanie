@@ -11,12 +11,22 @@ import Sorowka from "./surowki";
 import Ciasta from "./ciasta";
 import Przepis from "./przepis";
 import Profil from "./profil";
-import { BrowserRouter as Router} from "react-router-dom"
-import Route from 'react-router-dom/Route';
+import Rejestracja from "./rejestracja";
+import Paneladmina from "./panelAdmina";
+
+import {
+	BrowserRouter as Router,
+	Route,
+	Link,
+	Redirect,
+	withRouter
+} from "react-router-dom"
 
 var mysql = require('mysql');
 
 export default class Layout extends React.Component{
+
+	  
 	render(){
 		return(
 			<div>
@@ -58,6 +68,21 @@ export default class Layout extends React.Component{
 					<Route path="/przepis" exact strict render={
 						()=> {
 							return (<Przepis/>);
+						}
+					}/>
+					<Route path="/loguj" exact strict render={
+						()=> {
+							return (<Loguj/>);
+						}
+					}/>
+					<Route path="/rejestracja" exact strict render={
+						()=> {
+							return (<Rejestracja/>);
+						}
+					}/>
+					<Route path="/panelAdmina" exact strict render={
+						()=> {
+							return (<Paneladmina/>);
 						}
 					}/>
 				</Router>

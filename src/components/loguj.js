@@ -6,10 +6,17 @@ export default class Loguj extends React.Component{
 		return(
 			<loguj>
 			<center>
-			<table>
-			<tr><td>Login</td><td>Hasło</td></tr>
-			<tr><td>-</td><td>-</td></tr>
-			</table>
+				<form>
+					<label>Login:
+						<input type="text" name="login"/>
+					</label>
+					<br/>
+					<label>Hasło:
+						<input type="password" name="haslo"/>
+					</label>
+					<br/>
+					<input type="submit" value="Submit"/>
+				</form>
 			</center>
 			</loguj>
 		);
